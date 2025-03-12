@@ -1,0 +1,82 @@
+/* Base styles */
+body {
+    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* Heading and Subheading Styles */
+.welcome-heading {
+    font-size: 2.5rem;
+    color: #6a0dad; /* Dark purple */
+}
+
+.welcome-subheading {
+    font-size: 1.2rem;
+    color: #6a0dad; /* Lighter purple */
+}
+
+/* Card Styling */
+.card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: none;
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 30px;
+    font-size: 1.1rem;
+}
+
+/* Text Centering */
+.text-center {
+    text-align: center;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #6a0dad;
+    border-color: #6a0dad;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #580e8e;
+    border-color: #580e8e;
+}
+
+/* Hover Effects */
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.welcome-heading:hover {
+    color: #580e8e;
+}
+
+/* Spacing and Padding */
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mt-5 {
+    margin-top: 50px;
+}
+
+/* Login Section Styling */
+a.fw-bolder {
+    font-weight: bold;
+}
+
+.text-warning {
+    color: #ffcc00;
+}
+
+.text-danger {
+    color: #e74c3c;
+}
