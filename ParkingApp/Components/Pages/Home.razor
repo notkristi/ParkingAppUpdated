@@ -1,23 +1,37 @@
 ﻿@page "/"
-
 <PageTitle>Home</PageTitle>
 
-<div class="row">
-    <div class="col-12">
-        <h2 class="fw-bolder">Welcome to <span class="text-danger">Coding Droplets</span></h2>
+<div class="container">
+    <!-- Welcome Section -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center fw-bolder welcome-heading">Welcome to <span class="text-primary">Vlorë Airport Parking</span></h2>
+            <p class="text-center welcome-subheading">Your trusted parking space just next to the airport.</p>
+        </div>
     </div>
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <AuthorizeView>
-                    <NotAuthorized>
-                        <span>You are not logged in. Please <a class="fw-bolder" href="/login">click here</a> to login.</span>
-                    </NotAuthorized>
-                    <Authorized>
-                        <span>Logged in as <b>@context.User.Identity.Name</b>. <a class="fw-bolder" href="/logout">to logout.</a></span>
-                    </Authorized>
-                </AuthorizeView>
+
+    <!-- User Login Section -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <AuthorizeView>
+                        <NotAuthorized>
+                            <p class="text-center">You are not logged in. <a class="fw-bolder text-warning" href="/login">Click here</a> to login.</p>
+                        </NotAuthorized>
+                        <Authorized>
+                            <p class="text-center">Welcome back, <b>@context.User.Identity.Name</b>! <a class="fw-bolder text-danger" href="/logout">Logout</a></p>
+                        </Authorized>
+                    </AuthorizeView>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8 text-center">
+            <a href="/reserve" class="btn btn-lg btn-primary shadow-lg">Reserve Your Parking Spot</a>
         </div>
     </div>
 </div>
